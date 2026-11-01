@@ -1,9 +1,11 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.printf("Hello and welcome!");
-        System.out.println("Я изучаю Git и GitHub");
-        for (int i = 1; i <= 5; i++) {
-            System.out.println("i = " + i);
+        System.out.println(isTemperatureNormal(75));
+        System.out.println(isTemperatureNormal(85));
+        System.out.println(isTemperatureNormal(0));
+        System.out.println(isTemperatureNormal(80));
         }
+    public static boolean isTemperatureNormal (double temperature) {
+        return temperature >= 0 && temperature <= 80;
     }
-}
+    }
